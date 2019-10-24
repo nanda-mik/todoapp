@@ -12,7 +12,7 @@ if(port == null || port ==""){
 }
 app.use(express.static('public'))
 
-const connectionString = 'mongodb+srv://todoappUser:to123@do@cluster0-6c11v.mongodb.net/TodoApp?retryWrites=true&w=majority'
+// connectionString = '....'
 mongodbClient.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client){
   
   if(err){
